@@ -13,7 +13,7 @@ const WaffleImage = () => {
         }
       }
     }
-  `) 
+  `)
 
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }

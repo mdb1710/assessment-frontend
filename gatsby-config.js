@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Parallel Frontend Dev Assessment`,
     description: `Test for the frontend develop positions at Parallel.`,
-    author: `Ben Redden`,
+    author: `Michael Bonner`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#bffb7b`,
         theme_color: `#bffb7b`,
         display: `minimal-ui`,
-        icon: `src/images/parallel-icon.png`
+        icon: `src/images/parallel-icon.png`,
       },
     },
   ],
