@@ -3,10 +3,7 @@ import ImageLoader from "../image-loader"
 
 import prodObj from "./product-object.js"
 
-const productList = [prodObj]
-
 const ProductBlock = product => {
-  console.log(productList)
   return (
     <section className="product">
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
