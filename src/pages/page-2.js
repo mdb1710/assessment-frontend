@@ -4,9 +4,9 @@ import { useQueryParam } from "gatsby-query-params"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ProductInfo from '../components/product-components/product-info'
+import ProductInfo from "../components/product-components/product-info"
 
-import EncodingLibrary from "../libraries/rfc4648";
+import EncodingLibrary from "../libraries/rfc4648"
 
 const SecondPage = () => (
   <Layout>
@@ -16,14 +16,26 @@ const SecondPage = () => (
     <div id="productLayout">
       {
         // replace this with the "real" products
-        <ProductInfo product="waffle" />
+        <>
+          <ProductInfo product="hip-joint-chews" />
+          <ProductInfo product="calming-relaxation-chews" />
+          <ProductInfo product="bacon-tincture" />
+          <ProductInfo product="chicken-tincture" />
+          <ProductInfo product="waffle" />
+        </>
       }
     </div>
 
-    <div id="cta" style={{
-      textAlign: 'center'
-    }}>
-      <h2>Thanks for your interest in working with us at {EncodingLibrary.decode(useQueryParam('company', 'VGhlIFdhZmZsZQ=='))}</h2>
+    <div
+      id="cta"
+      style={{
+        textAlign: "center",
+      }}
+    >
+      <h2>
+        Thanks for your interest in working with us at{" "}
+        {EncodingLibrary.decode(useQueryParam("company", "UGFyYWxsZWw="))}
+      </h2>
       <Link to="/">Go back to the homepage</Link>
     </div>
   </Layout>
